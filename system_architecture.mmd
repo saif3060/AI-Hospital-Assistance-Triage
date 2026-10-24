@@ -1,0 +1,8 @@
+flowchart TD
+    U[User / Staff] --> UI[Streamlit UI]
+    UI --> T[Triage Engine]
+    T --> KB[JSON Knowledge Base]
+    UI --> DB[SQLite Database]
+    UI --> R[Reporting and CSV Exports]
+    T --> E[Rule Trace and Explanation]
+    E --> UI

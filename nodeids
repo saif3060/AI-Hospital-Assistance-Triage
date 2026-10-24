@@ -1,0 +1,13 @@
+[
+  "tests/test_database.py::test_create_read_update_delete",
+  "tests/test_database.py::test_invalid_age_rejected",
+  "tests/test_queue.py::test_empty_queue",
+  "tests/test_queue.py::test_queue_priority_then_timestamp",
+  "tests/test_triage_engine.py::test_emergency_flag_has_high_priority",
+  "tests/test_triage_engine.py::test_explicit_review_routes_to_review",
+  "tests/test_triage_engine.py::test_incomplete_information_routes_to_review",
+  "tests/test_triage_engine.py::test_knowledge_base_validates",
+  "tests/test_triage_engine.py::test_mild_demo_group_is_low_but_requires_review",
+  "tests/test_triage_engine.py::test_moderate_demo_group_is_medium",
+  "tests/test_triage_engine.py::test_unknown_group_falls_back_to_review"
+]

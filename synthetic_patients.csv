@@ -1,0 +1,5 @@
+patient_code,display_name,age,symptom_group,symptoms,symptom_duration
+DEMO-1001,Demo Patient A,34,routine_mild,Mild self-reported discomfort,Today
+DEMO-1002,Demo Patient B,52,routine_moderate,Persistent discomfort reported,1-2 days
+DEMO-1003,Demo Patient C,27,needs_review,Unclear symptom description,Unknown
+DEMO-1004,Demo Patient D,63,needs_review,Worsening symptoms reported,Several hours

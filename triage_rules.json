@@ -1,0 +1,67 @@
+{
+  "ruleset_name": "Illustrative Educational Ruleset",
+  "version": "1.0",
+  "warning": "Not clinically validated. Examples are incomplete and must never be used for real clinical decisions.",
+  "rules": [
+    {
+      "id": "EDU-EMERGENCY-REVIEW",
+      "purpose": "Flag a user-selected possible emergency warning sign for immediate human review.",
+      "conditions": {
+        "possible_emergency_warning_sign": true
+      },
+      "outcome": "High priority",
+      "human_review_required": true,
+      "explanation": "A possible emergency warning sign was selected. Seek immediate professional assessment or contact local emergency services."
+    },
+    {
+      "id": "EDU-INCOMPLETE-INFO",
+      "purpose": "Avoid assigning a routine category when essential information is missing.",
+      "conditions": {
+        "required_information_complete": false
+      },
+      "outcome": "Needs human review",
+      "human_review_required": true,
+      "explanation": "Information is incomplete, so the prototype cannot make even an educational routine classification."
+    },
+    {
+      "id": "EDU-REVIEW-REQUESTED",
+      "purpose": "Route uncertain or explicitly requested cases to human review.",
+      "conditions": {
+        "human_review_requested": true
+      },
+      "outcome": "Needs human review",
+      "human_review_required": true,
+      "explanation": "The case was marked for human review rather than relying on an automated category."
+    },
+    {
+      "id": "EDU-SYMPTOM-REVIEW",
+      "purpose": "Demonstrate a conservative review path for a selected symptom group.",
+      "conditions": {
+        "symptom_group": "needs_review"
+      },
+      "outcome": "Needs human review",
+      "human_review_required": true,
+      "explanation": "This illustrative symptom group is configured for human review; it is not a clinical protocol."
+    },
+    {
+      "id": "EDU-ROUTINE-MEDIUM",
+      "purpose": "Demonstrate a non-emergency, complete-information category.",
+      "conditions": {
+        "symptom_group": "routine_moderate"
+      },
+      "outcome": "Medium priority",
+      "human_review_required": true,
+      "explanation": "The selected demonstration group maps to a provisional medium category in this educational ruleset."
+    },
+    {
+      "id": "EDU-ROUTINE-LOW",
+      "purpose": "Demonstrate a non-emergency, complete-information category.",
+      "conditions": {
+        "symptom_group": "routine_mild"
+      },
+      "outcome": "Low priority",
+      "human_review_required": true,
+      "explanation": "The selected demonstration group maps to a provisional low category in this educational ruleset. This does not mean it is medically safe to wait."
+    }
+  ]
+}

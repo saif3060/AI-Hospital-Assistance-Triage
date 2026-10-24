@@ -1,0 +1,7 @@
+{
+  "app_name": "AI-Powered Hospital Assistance and Triage",
+  "app_version": "1.0.0",
+  "database_path": "hospital_triage.db",
+  "demo_mode": true,
+  "disclaimer": "Educational prototype only. Not a medical device, diagnosis tool, or replacement for professional assessment."
+}
